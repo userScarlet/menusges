@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <meta charset="utf-8">
+    <style>
+      body, html {
+        min-width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        font: Arial 14px;
+      }
+      .ayimgui {
+        width: 350px;
+        height: 200px;
+        background-color: #412b78;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        border-radius: 20px;
+      }
+      .peregorodka {
+        background-color: #8d63f7;
+        height: 5px;
+        width: 320px;
+        position: relative;
+        left: 15px;
+        top: 30px;
+      }
+      .text {
+        color: white;
+        position: relative;
+        top: -22px;
+        left: 70px;
+      }
+      .arcane {
+        color: #d80000;
+        position: relative;
+        left: -65px;
+      }
+            .esp {
+        color: #d80000;
+        position: relative;
+        left: -65px;
+              top: -52px;
+      }
+                  .version {
+        color: white;
+        position: relative;
+        left: -65px;
+              top: 100px;
+      }
+      .hideiconon {
+        background-color: red;
+        position: relative;
+        top: 25px;
+        left: 157px;
+      }
+      .hideiconoff {
+        background-color: red;
+        position: relative;
+        top: 25px;
+        left: -55px;
+      }
+      html {
+  scroll-behavior: smooth;
+}
+    </style>
+    <!--<link rel="stylesheet" href="style.css"/>-->
+    <!--<script defer src="script.js"></script>-->
+  </head>
+  <body>
+    <div class="ayimgui">
+     <div class="peregorodka">
+        <div class="text">
+          HuyTap Premium
+          <a href="https://t.me/huytap1/310">Id Skins</a>
+        <p class="arcane" onclick="custom()">
+          SkinReplacer
+        </p>
+          <p class="version" onclick="version()">
+          1.1
+        </p>
+          <p class="esp" onclick="esp()">
+          Esp Activated
+        </p>
+          <title>
+            Your status: Premium
+          </title>
+          <button class="hideiconon" onclick="hideiconON()">HideICON ON
+</button>  
+          <button class="hideiconoff" onclick="hideiconOFF">
+            HideICON OFF
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+		function custom() {
+          var oldskinid = prompt("Айди скина из инвентаря:");
+        var newskinid = prompt("Айди скина который ты хочешь получить:");
+        h5gg.searchNumber(oldskinid, 'I32', '0x00000000', '0x1600000000');
+        h5gg.editAll(newskinid,'I64');
+        alert("HuyTap Premium!");
+        h5gg.clearResults();
+        }
+      function hideiconON(input)
+{   setButtonImage("https://img1.liveinternet.ru/images/attach/c/2/73/450/73450235_3607663_GolybRozovobvod30almaz.png");
+ alert("Иконка спрятана!")
+}
+ function hideiconOFF(input)
+  {
+   setButtonImage("https://ibb.co/8KJY3nD");history
+    alert("Ты вернул иконку!")
+  }
+      function esp() {
+    window.draw_state = 11;
+    alert("ESP Activated!");
+}
+	</script>
+  </body>
+</html>
